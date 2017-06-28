@@ -1,0 +1,727 @@
+/* image slider */
+#slider_container_2 { width: 100%; height: 400px; }
+.container_row {  top: 0px; }
+.slider { position: relative; } 
+.SliderName_2 {	width: 1349px; height: 400px; overflow: hidden; border:2px;}
+/*end of image slider */
+
+#header-bar{ height: 90px; background-color:#000000;}
+.container{ padding: 0;}
+#top-header,#content-header1,#content-header2 {background:#ffe300;}
+.top-row {padding:8px 0;}
+.welcome_user{padding-left:50px;float:right;}
+
+/* main menu */
+#main-header {background:#000;}
+#main-menu {float:right; margin:0; padding:0; }
+.main-nav span {display: none;}
+#main-menu li { display: list-item; float: left; list-style: none outside none; margin-left: 10px; padding: 20px 10px; cursor: pointer; position: relative;}
+#main-menu li a {color:#ccc; display:block; line-height:20px; padding:10px 0; font-size:16px; font-weight:700; text-transform:uppercase;}
+#main-menu li:hover > a, #main-menu li.current-menu-item > a {color:#fff;}
+#main-menu li ul { background-color: rgba(0,0,0,0.92); border-top: 3px solid;left: 0;opacity: 0;visibility: hidden;padding: 10px;position: absolute;top: 100%;margin-top: -10px;width: 190px;z-index: 91;}
+#main-menu li:hover > ul { left: 0; opacity: 1; visibility: visible; margin-top: 0; }
+#main-menu li:last-child ul { left: auto; right: 0;}
+#main-menu li:hover > ul li:hover ul { left: 100%;}
+#main-menu ul li:hover {  background-color: #000;}
+
+/* common classes */
+.alignleft {float:left;}
+.alignright {float:right;}
+img.alignleft {margin:10px 20px 10px 0}
+img.alignright {margin:10px 0 10px 20px}
+img.aligncenter {margin:10px auto}
+.mart10 {margin-top:10px;}
+.marb10 {margin-bottom:10px;}
+.mart20 {margin-top:20px;}
+.marb20 {margin-bottom:20px;}
+.marb30 {margin-bottom:30px;}
+.text-upper {text-transform:uppercase;}
+.btn {transition:background-color .3s ease, border-color .3s ease; -moz-transition:background-color .3s ease, border-color .3s ease; -webkit-transition:background-color .3s ease, border-color .3s ease; -o-transition:background-color .3s ease, border-color .3s ease; -ms-transition:background-color .3s ease, border-color .3s ease;}
+.headline { font-weight:700;}
+.gray {background:#f1f1f1;}
+.dark-gray {background:#e6e6e6;}
+.box-shadow1 {box-shadow:0 1px rgba(0,0,0, .2); -moz-box-shadow:0 1px rgba(0,0,0, .2); -webkit-box-shadow:0 1px rgba(0,0,0, .2); -ms-box-shadow:0 1px rgba(0,0,0, .2);}
+blockquote {color:#292929; background:url(../img/icons/blockquote.png) 0 0 no-repeat #f1f1f1;}
+blockquote strong {font-size:16px;}
+
+/* side pannel for choosing color */
+.side-panel { background: none repeat scroll 0 0 #222222;left: -260px; position: fixed;top: 150px;transition: all 0.4s ease 0s; width: 260px; z-index: 1000000000; padding: 20px ; }
+.side-panel:hover{ left: 0; }
+.side-panel:before 
+{ content: ""; position: absolute; right: -40px; height: 40px; top: 0; width: 40px; background: url("../img/icons/icon.png") no-repeat scroll center center #222222;
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -ms-border-radius: 0 3px 3px 0;
+    -o-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}
+.colors h6 { color: #FFF; font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; }
+.colors a { float: left; width: 47px; cursor: pointer; height: 20px; margin-right: 10px; background: black; }
+.colors a:last-child{ margin:0; }
+.colors a.color1{ background-color: #FFE200; }
+.colors a.color2{ background-color: #01E060; }
+.colors a.color3{ background-color: #FF845E; }
+.colors a.color4{ background-color: #59aeff; }
+/* End of the pannel */
+
+
+
+
+/* footer */
+#ft-footer {color:#d4d5d5;}
+#countrySelect {background:rgba(42,46,47, .9);}
+.footer-overlay {padding:25px 0; background:rgba(42,46,47, .9);}
+#ft-footer p {font-size:14px; margin-bottom:20px;}
+#ft-footer a {color:#ffe300;}
+#ft-footer a:hover {color:#fff;}
+#ft-footer h3 {color:#fff; font-size:28px; margin:10px 0 20px;}
+
+.footer-overlay .col-md-6 { overflow: hidden;}
+.tl-author {float:left; margin:10px 0;}
+.tl-author-img {float:left; width:60px; height:80px; margin-right:20px;}
+.tl-author-img {float:left; width:60px; height:80px; margin-right:20px;}
+.tl-author-title {float:left; width:70%; color:#ffe300; font-size:16px; font-weight:700; margin-top:15px;}
+.tl-author-desc {float:left; font-size:12px;}
+.footer-menu {float:left; width:100%; padding:10px 0 10px; text-align:center; list-style:none;}
+.footer-menu li {display:inline-block;}
+.footer-menu li a {color:#000; padding:2px 8px 2px 3px; font-size:14px; line-height:1; border-right:1px solid #7c7c7c;}
+.footer-menu li a:hover {color:#292c2f;}
+.footer-menu li.last-item a {border:none;}
+
+/*End of footer*/
+
+/* Extra modifications */
+
+.placeNames{ font-family:TAHOMA ; font-size:20px;text-align:center;} /*for the CITY names above the photos*/
+/*Profile Page*/
+
+.tab { padding-top:0px;	background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:5px 5px 10px #000; position:relative; }
+.user_choice{ padding-top:0px;	background:rgba(255,255,255,0.5); margin-top:auto; margin-left: 4px; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:5px 5px 10px #000; position:relative; }
+.utab_pannel { width:1100px; height:398px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; position:relative; }
+.utab_matter{ width:700px; height:330px;top:30px; padding-top:10px; padding-left:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; position:relative; }
+.utab_edit_pannel { width:1100px; height:398px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; position:relative; }
+.utab_edit_matter{ width:1000px; height:330px;top:30px; padding-top:10px; padding-left:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; position:relative; }
+.utab_pass_pannel { width:1100px; height:398px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; position:relative; }
+.utab_pass_matter{ width:800px; height:330px;top:30px; padding-top:10px; padding-left:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; position:relative; }
+
+
+.utab{}
+.form_place{ top:280px;left:400px; position:absolute }
+.data_place{ top:280px;left:400px; position:absolute }
+/* End of Profile Page */
+textarea{ resize:none;color:#FFF; padding:0px 0px 0px 30px; background:rgba(0,0,0,0.3); border:1px solid #000; 	margin:5px 0; background-position:2% 50%; background-repeat:no-repeat;}
+
+
+/* login page */
+
+.login_panel { width:900px; height:680px; padding-top:150px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; position:relative; }
+.login_matter{ width:500px; height:380px; padding-top:50px; padding-left:120px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; position:relative; }
+.register_panel { width:500px; height:1100px; padding-top:50px;padding-left:70px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+/*.matter { width:350px; height:350px; margin:0 auto; }	*/
+.heading { font-family: 'Actor', sans-serif; font-size:14px; color:#000; margin:20px 0 0 0; font-weight:600; }		
+.textbox { width:250px; height:30px; color:#FFF; padding:0px 0px 0px 30px; background:rgba(0,0,0,0.3); border:1px solid #000; 	margin:5px 0; background-position:2% 50%; background-repeat:no-repeat; }		
+/* end of login Page */	
+
+/* Book a Tour */
+
+.tours {margin-right: 5px; margin-left: 160px; margin-top: 10px; }
+.package-box {  float:left ; width: 227px; margin-right:5px; margin-left: 5px; border: 1px solid #bbb6b6; margin-bottom:10px; min-height:205px; }
+.tour-heading { font-family:TAHOMA ; font-size:18px; text-align:center; line-height: 30px; text-transform: uppercase; }
+.tour-heading a{ text-decoration:none; color: #565454; }
+.tour-heading a:hover{ text-decoration:underline; color: #565454; }
+.tour-headingside { margin-bottom:5px; font-family: Century Gothic; font-size: 18px; line-height: 30px; background-color:#9F7251; color: #ffffff; padding-left: 5px; text-transform: uppercase; }
+.heading-sub { font-family: Century Gothic; font-size: 12px; line-height: 20px; font-weight: normal; color: #333; text-decoration: none; text-align: justify; padding-left: 15px; }
+.heading-sub a{text-decoration: none;color: #333;}
+.heading-sub a:hover{text-decoration: underline;color: #333;}
+.book_tour_package_pannel { width:1020px; height:740px; top:50px;padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.book_tour_package_matter { width:1050px; height:690px; margin-left:35px; }
+ 
+
+
+/* end of Book a Tour */
+
+/* package pannel*/
+
+.package_panel_taj { width:800px; height:960px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.package_matter_taj { width:750px; height:910px; margin:0 auto; }
+.txt-area { margin-right: 5px; margin-left: auto; margin-top: 10px; }
+.top_tour{ font-family:Century Gothic; font-size:18px; text-align:justify; font-weight:bold; padding:0px 0px 5px 0px; box-shadow:2px 2px 5px #000; }
+.sub_text{ color:#2f5f90; font-family:Century Gothic; width:160px; float:left; text-align:left; padding:8px 0px 0px 0px; }
+.tourhome{ border-bottom:1px solid #3F94D7; color:#000000; padding:5px 5px 5px 5px; width:725px; }
+.tourhome a{ color:#000000; text-decoration:none; }
+.tourhome a:hover{ color:#000000; text-decoration:none;	}
+.package_panel_golden { width:800px; height:1040px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.package_matter_golden { width:750px; height:990px; margin:0 auto; }
+.package_panel_cultural { width:800px; height:1070px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.package_matter_cultural { width:750px; height:1020px; margin:0 auto; }
+.package_panel_ladakhKashmir { width:800px; height:1490px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.package_matter_ladakhKashmir { width:750px; height:1440px; margin:0 auto; }
+.package_panel_east { width:800px; height:860px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.package_matter_east { width:750px; height:810px; margin:0 auto; }
+.package_panel_goa { width:800px; height:560px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.package_matter_goa { width:750px; height:510px; margin:0 auto; }
+.package_panel_honeymoon { width:800px; height:1160px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.package_matter_honeymoon { width:750px; height:1110px; margin:0 auto; }
+.package_panel_kerala { width:800px; height:540px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.package_matter_kerala { width:750px; height:490px; margin:0 auto; }
+.package_panel_pilgrimage { width:800px; height:600px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.package_matter_pilgrimage { width:750px; height:550px; margin:0 auto; }
+.package_panel_rajasthan { width:800px; height:1440px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.package_matter_rajasthan { width:750px; height:1390px; margin:0 auto; }
+.package_panel_wildlife{ width:800px; height:570px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.package_matter_wildlife { width:750px; height:520px; margin:0 auto; }
+.package_panel_south { width:800px; height:1250px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.package_matter_south { width:750px; height:1200px; margin:0 auto; }
+.back_butt{ font-family:Century Gothic; font-size:18px; text-align:left; font-weight:bold; color:black; padding:3px 6px 4px 6px; box-shadow:2px 2px 5px #000; }
+.book_butt{ font-family:Century Gothic; font-size:18px;float:right;   box-shadow:2px 2px 5px #000; text-align:left; color:black; font-weight:bold; padding:3px 6px 4px 6px; }
+
+/* itenary text */
+.itenary_pannel{ font-family:Century Gothic; font-size:18px; text-align:left; font-weight:bold; padding:3px 6px 4px 6px; }
+/* end of itenary text */
+
+.image1_pos { width:450px; height:260px; padding-top:0px;padding-left:0px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;float:left; }
+.image2_pos { width:450px; height:260px; padding-top:0px;padding-left:0px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; float:right; }
+
+/*cultural tour */
+.cultural_indiaNepal_package_pannel { width:1050px; height:1980px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.cultural_indiaNepal_package_matter { width:1000px; height:1930px; margin:0 auto; }
+.cultural_indiaNepal_itenary_pannel {  width:1000px; height:1300px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.cultural_indiaNepal_itenary_matter{ width:950px; height:1250px; margin: 0 auto; }
+.cultural_Desert_package_pannel { width:1050px; height:1820px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.cultural_Desert_package_matter { width:1000px; height:1950px; margin:0 auto; }
+.cultural_Desert_itenary_pannel {  width:1000px; height:1140px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.cultural_Desert_itenary_matter{ width:950px; height:1090px; margin: 0 auto; }
+.cultural_Kashmir_package_pannel { width:1050px; height:1330px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.cultural_Kashmir_package_matter { width:1000px; height:1280px; margin:0 auto; }
+.cultural_Kashmir_itenary_pannel {  width:1000px; height:630px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.cultural_Kashmir_itenary_matter{ width:950px; height:580px; margin: 0 auto; }
+.cultural_Forts_package_pannel { width:1050px; height:1690px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.cultural_Forts_package_matter { width:1000px; height:1640px; margin:0 auto; }
+.cultural_Forts_itenary_pannel {  width:1000px; height:1010px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.cultural_Forts_itenary_matter{ width:950px; height:960px; margin: 0 auto; }
+.cultural_Shangrila_package_pannel { width:1050px; height:1530px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.cultural_Shangrila_package_matter { width:1000px; height:1480px; margin:0 auto; }
+.cultural_Shangrila_itenary_pannel {  width:1000px; height:850px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.cultural_Shangrila_itenary_matter{ width:950px; height:800px; margin: 0 auto; }
+.cultural_Ajanta_package_pannel { width:1050px; height:1110px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.cultural_Ajanta_package_matter { width:1000px; height:1060px; margin:0 auto; }
+.cultural_Ajanta_itenary_pannel {  width:1000px; height:440px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.cultural_Ajanta_itenary_matter{ width:950px; height:390px; margin: 0 auto; }
+.cultural_Pictorial_package_pannel { width:1050px; height:1600px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.cultural_Pictorial_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.cultural_Pictorial_itenary_pannel {  width:1000px; height:920px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.cultural_Pictorial_itenary_matter{ width:950px; height:880px; margin: 0 auto; }
+/*end of cultural Tour */
+
+/*Taj Tour */
+.taj_Buddhist_package_pannel{ width:1050px; height:1700px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.taj_Buddhist_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.taj_Buddhist_itenary_pannel {  width:1000px; height:1000px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.taj_Buddhist_itenary_matter{ width:950px; height:950px; margin: 0 auto; }
+.taj_delhiPushkar_package_pannel{ width:1050px; height:1550px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.taj_delhiPushkar_package_matter { width:1000px; height:1500px; margin:0 auto; }
+.taj_delhiPushkar_itenary_pannel {  width:1000px; height:860px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.taj_delhiPushkar_itenary_matter{ width:950px; height:810px; margin: 0 auto; }
+.taj_Khajuraho_package_pannel{ width:1050px; height:1550px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.taj_Khajuraho_package_matter { width:1000px; height:1500px; margin:0 auto; }
+.taj_Khajuraho_itenary_pannel {  width:1000px; height:860px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.taj_Khajuraho_itenary_matter{ width:950px; height:810px; margin: 0 auto; }
+.taj_Pushkar_package_pannel{ width:1050px; height:1390px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.taj_Pushkar_package_matter { width:1000px; height:1340px; margin:0 auto; }
+.taj_Pushkar_itenary_pannel {  width:1000px; height:730px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.taj_Pushkar_itenary_matter{ width:950px; height:680px; margin: 0 auto; }
+.taj_Kashmir_package_pannel{ width:1050px; height:2040px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.taj_Kashmir_package_matter { width:1000px; height:1960px; margin:0 auto; }
+.taj_Kashmir_itenary_pannel {  width:1000px; height:1360px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.taj_Kashmir_itenary_matter{ width:950px; height:1310px; margin: 0 auto; }
+.taj_Himalayan_package_pannel{ width:1050px; height:2460px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.taj_Himalayan_package_matter { width:1000px; height:2410px; margin:0 auto; }
+.taj_Himalayan_itenary_pannel {  width:1000px; height:1760px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.taj_Himalayan_itenary_matter{ width:950px; height:810px; margin: 0 auto; }
+.taj_Mountain_package_pannel{ width:1050px; height:1900px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.taj_Mountain_package_matter { width:1000px; height:1400px; margin:0 auto; }
+.taj_Mountain_itenary_pannel {  width:1000px; height:1200px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.taj_Mountain_itenary_matter{ width:950px; height:1150px; margin: 0 auto; }
+/*end  of Taj Tour*/
+
+/* Golden Triangle Tour */
+.gVaranasi_package_pannel{ width:1050px; height:1600px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.gVaranasi_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.gVaranasi_itenary_pannel {  width:1000px; height:930px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.gVaranasi_itenary_matter{ width:950px; height:880px; margin: 0 auto; }
+.gSouth_package_pannel{ width:1050px; height:1870px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.gSouth_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.gSouth_itenary_pannel {  width:1000px; height:1170px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.gSouth_itenary_matter{ width:950px; height:1120px; margin: 0 auto; }
+.gMandawa_package_pannel{ width:1050px; height:1530px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.gMandawa_package_matter { width:1000px; height:1480px; margin:0 auto; }
+.gMandawa_itenary_pannel {  width:1000px; height:850px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.gMandawa_itenary_matter{ width:950px; height:800px; margin: 0 auto; }
+.gKhajuraho_package_pannel{ width:1050px; height:1530px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.gKhajuraho_package_matter { width:1000px; height:1580px; margin:0 auto; }
+.gKhajuraho_itenary_pannel {  width:1000px; height:850px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.gKhajuraho_itenary_matter{ width:950px; height:800px; margin: 0 auto; }
+.gGwalior_package_pannel{ width:1050px; height:1500px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.gGwalior_package_matter { width:1000px; height:1450px; margin:0 auto; }
+.gGwalior_itenary_pannel {  width:1000px; height:850px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.gGwalior_itenary_matter{ width:950px; height:800px; margin: 0 auto; }
+.gAmritsar_package_pannel{ width:1050px; height:1530px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.gAmritsar_package_matter { width:1000px; height:1480px; margin:0 auto; }
+.gAmritsar_itenary_pannel {  width:1000px; height:880px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.gAmritsar_itenary_matter{ width:950px; height:830px; margin: 0 auto; }
+.gRishikesh_package_pannel{ width:1050px; height:1580px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.gRishikesh_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.gRishikesh_itenary_pannel {  width:1000px; height:910px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.gRishikesh_itenary_matter{ width:950px; height:860px; margin: 0 auto; }
+
+/* end of Golden triangle Tour */
+
+/* Ladakh and Kashmir Tour */
+.glimpses_package_pannel{ width:1050px; height:1400px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.glimpses_package_matter { width:1000px; height:1350px; margin:0 auto; }
+.glimpses_itenary_pannel {  width:1000px; height:720px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.glimpses_itenary_matter{ width:950px; height:670px; margin: 0 auto; }
+.kashLadakh_package_pannel{ width:1050px; height:1840px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.kashLadakh_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.kashLadakh_itenary_pannel {  width:1000px; height:1170px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.kashLadakh_itenary_matter{ width:950px; height:1120px; margin: 0 auto; }
+.jammu_package_pannel{ width:1050px; height:1440px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.jammu_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.jammu_itenary_pannel {  width:1000px; height:760px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.jammu_itenary_matter{ width:950px; height:710px; margin: 0 auto; }
+.hemis_package_pannel{ width:1050px; height:1940px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.hemis_package_matter { width:1000px; height:1890px; margin:0 auto; }
+.hemis_itenary_pannel {  width:1000px; height:1260px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.hemis_itenary_matter{ width:950px; height:1210px; margin: 0 auto; }
+.kashHill_package_pannel{ width:1050px; height:1450px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.kashHill_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.kashHill_itenary_pannel {  width:1000px; height:780px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.kashHill_itenary_matter{ width:950px; height:730px; margin: 0 auto; }
+.kashHouse_package_pannel{ width:1050px; height:1110px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.kashHouse_package_matter { width:1000px; height:1060px; margin:0 auto; }
+.kashHouse_itenary_pannel {  width:1000px; height:440px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.kashHouse_itenary_matter{ width:950px; height:390px; margin: 0 auto; }
+.ladCulture_package_pannel{ width:1050px; height:1780px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ladCulture_package_matter { width:1000px; height:1730px; margin:0 auto; }
+.ladCulture_itenary_pannel {  width:1000px; height:1080px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ladCulture_itenary_matter{ width:950px; height:1030px; margin: 0 auto; }
+.ladHoliday_package_pannel{ width:1050px; height:1450px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ladHoliday_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.ladHoliday_itenary_pannel {  width:1000px; height:780px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ladHoliday_itenary_matter{ width:950px; height:730px; margin: 0 auto; }
+.ladMonastery_package_pannel{ width:1050px; height:1930px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ladMonastery_package_matter { width:1000px; height:1820px; margin:0 auto; }
+.ladMonastery_itenary_pannel {  width:1000px; height:1240px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ladMonastery_itenary_matter{ width:950px; height:1190px; margin: 0 auto; }
+.ladTrekking_package_pannel{ width:1050px; height:1470px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ladTrekking_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.ladTrekking_itenary_pannel {  width:1000px; height:790px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ladTrekking_itenary_matter{ width:950px; height:740px; margin: 0 auto; }
+.lehMonastery_package_pannel{ width:1050px; height:2450px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.lehMonastery_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.lehMonastery_itenary_pannel {  width:1000px; height:1760px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.lehMonastery_itenary_matter{ width:950px; height:1710px; margin: 0 auto; }
+
+/* end of Ladakh and Kashmir Tour   */
+
+/* Rajasthan Tour   */
+.rBest_package_pannel{ width:1050px; height:1570px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.rBest_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.rBest_itenary_pannel {  width:1000px; height:900px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.rBest_itenary_matter{ width:950px; height:850px; margin: 0 auto; }
+.rFort_package_pannel{ width:1050px; height:2180px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.rFort_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.rFort_itenary_pannel {  width:1000px; height:1490px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.rFort_itenary_matter{ width:950px; height:1440px; margin: 0 auto; }
+.rHistorical_package_pannel{ width:1050px; height:1560px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.rHistorical_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.rHistorical_itenary_pannel {  width:1000px; height:880px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.rHistorical_itenary_matter{ width:950px; height:830px; margin: 0 auto; }
+.rMaharaja_package_pannel{ width:1050px; height:1760px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.rMaharaja_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.rMaharaja_itenary_pannel {  width:1000px; height:1060px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.rMaharaja_itenary_matter{ width:950px; height:1010px; margin: 0 auto; }
+.rMedivial_package_pannel{ width:1050px; height:2490px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.rMedivial_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.rMedivial_itenary_pannel {  width:1000px; height:1800px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.rMedivial_itenary_matter{ width:950px; height:1750px; margin: 0 auto; }
+.rCulture_package_pannel{ width:1050px; height:1780px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.rCulture_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.rCulture_itenary_pannel {  width:1000px; height:1080px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.rCulture_itenary_matter{ width:950px; height:1030px; margin: 0 auto; }
+.rVaccation_package_pannel{ width:1050px; height:2880px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.rVaccation_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.rVaccation_itenary_pannel {  width:1000px; height:2170px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.rVaccation_itenary_matter{ width:950px; height:2120px; margin: 0 auto; }
+.rRoyal_package_pannel{ width:1050px; height:2060px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.rRoyal_package_matter { width:1000px; height:2010px; margin:0 auto; }
+.rRoyal_itenary_pannel {  width:1000px; height:1360px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.rRoyal_itenary_matter{ width:950px; height:1310px; margin: 0 auto; }
+.rRural_package_pannel{ width:1050px; height:2170px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.rRural_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.rRural_itenary_pannel {  width:1000px; height:1480px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.rRural_itenary_matter{ width:950px; height:1430px; margin: 0 auto; }
+
+/* end of Rajasthan Tour   */
+
+/* Kerala Tour   */
+.kBest_package_pannel{ width:1050px; height:1720px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.kBest_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.kBest_itenary_pannel {  width:1000px; height:1040px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.kBest_itenary_matter{ width:950px; height:990px; margin: 0 auto; }
+.kBoat_package_pannel{ width:1050px; height:1650px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.kBoat_package_matter { width:1000px; height:1600px; margin:0 auto; }
+.kBoat_itenary_pannel {  width:1000px; height:970px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.kBoat_itenary_matter{ width:950px; height:950px; margin: 0 auto; }
+.kBeach_package_pannel{ width:1050px; height:1530px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.kBeach_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.kBeach_itenary_pannel {  width:1000px; height:850px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.kBeach_itenary_matter{ width:950px; height:800px; margin: 0 auto; }
+/* end of Kerala Tour   */
+
+/* Wildlife Tour   */
+.corbetPark_package_pannel{ width:1050px; height:1220px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.corbetPark_package_matter { width:1000px; height:1170px; margin:0 auto; }
+.corbetPark_itenary_pannel {  width:1000px; height:540px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.corbetPark_itenary_matter{ width:950px; height:490px; margin: 0 auto; }
+.jungleJoy_package_pannel{ width:1050px; height:1840px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.jungleJoy_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.jungleJoy_itenary_pannel {  width:1000px; height:1140px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.jungleJoy_itenary_matter{ width:950px; height:1090px; margin: 0 auto; }
+.tigerTrail_package_pannel{ width:1050px; height:1840px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.tigerTrail_package_matter { width:1000px; height:1790px; margin:0 auto; }
+.tigerTrail_itenary_pannel {  width:1000px; height:1140px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.tigerTrail_itenary_matter{ width:950px; height:1090px; margin: 0 auto; }
+/* end of Wildlife Tour   */
+
+/* Pilgrimage Tour   */
+.badri_package_pannel{ width:1050px; height:1370px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.badri_package_matter { width:1000px; height:1320px; margin:0 auto; }
+.badri_itenary_pannel {  width:1000px; height:680px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.badri_itenary_matter{ width:950px; height:630px; margin: 0 auto; }
+.pBuddhist_package_pannel{ width:1050px; height:2100px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.pBuddhist_package_matter { width:1000px; height:2050px; margin:0 auto; }
+.pBuddhist_itenary_pannel {  width:1000px; height:1400px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.pBuddhist_itenary_matter{ width:950px; height:1350px; margin: 0 auto; }
+.charDham_package_pannel{ width:1050px; height:1900px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.charDham_package_matter { width:1000px; height:1850px; margin:0 auto; }
+.charDham_itenary_pannel {  width:1000px; height:1180px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.charDham_itenary_matter{ width:950px; height:1130px; margin: 0 auto; }
+/* end of PilgrimageTour   */
+
+/* Goa Tour   */
+.gBeach_package_pannel{ width:1050px; height:1490px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.gBeach_package_matter { width:1000px; height:1440px; margin:0 auto; }
+.gBeach_itenary_pannel {  width:1000px; height:810px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.gBeach_itenary_matter{ width:950px; height:760px; margin: 0 auto; }
+.gEnchant_package_pannel{ width:1050px; height:1960px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.gEnchant_package_matter { width:1000px; height:1910px; margin:0 auto; }
+.gEnchant_itenary_pannel {  width:1000px; height:1260px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.gEnchant_itenary_matter{ width:950px; height:1210px; margin: 0 auto; }
+.gHoney_package_pannel{ width:1050px; height:1380px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.gHoney_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.gHoney_itenary_pannel {  width:1000px; height:700px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.gHoney_itenary_matter{ width:950px; height:650px; margin: 0 auto; }
+/* end of Goa Tour   */
+
+/* South India Tour   */
+.sKerala_package_pannel{ width:1050px; height:1080px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.sKerala_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.sKerala_itenary_pannel {  width:1000px; height:400px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.sKerala_itenary_matter{ width:950px; height:350px; margin: 0 auto; }
+.sBeach_package_pannel{ width:1050px; height:1630px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.sBeach_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.sBeach_itenary_pannel {  width:1000px; height:930px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.sBeach_itenary_matter{ width:950px; height:880px; margin: 0 auto; }
+.sCulinary_package_pannel{ width:1050px; height:1660px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.sCulinary_package_matter { width:1000px; height:1610px; margin:0 auto; }
+.sCulinary_itenary_pannel {  width:1000px; height:980px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.sCulinary_itenary_matter{ width:950px; height:930px; margin: 0 auto; }
+.sHeritage_package_pannel{ width:1050px; height:2080px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.sHeritage_package_matter { width:1000px; height:2030px; margin:0 auto; }
+.sHeritage_itenary_pannel {  width:1000px; height:1380px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.sHeritage_itenary_matter{ width:950px; height:1330px; margin: 0 auto; }
+.sSpice_package_pannel{ width:1050px; height:1920px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.sSpice_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.sSpice_itenary_pannel {  width:1000px; height:1240px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.sSpice_itenary_matter{ width:950px; height:1190px; margin: 0 auto; }
+.sSouth_package_pannel{ width:1050px; height:1880px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.sSouth_package_matter { width:1000px; height:1830px; margin:0 auto; }
+.sSouth_itenary_pannel {  width:1000px; height:1190px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.sSouth_itenary_matter{ width:950px; height:1140px; margin: 0 auto; }
+.sTamil_package_pannel{ width:1050px; height:1260px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.sTamil_package_matter { width:1000px; height:1210px; margin:0 auto; }
+.sTamil_itenary_pannel {  width:1000px; height:580px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.sTamil_itenary_matter{ width:950px; height:530px; margin: 0 auto; }
+.sVelankani_package_pannel{ width:1050px; height:1420px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.sVelankani_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.sVelankani_itenary_pannel {  width:1000px; height:740px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.sVelankani_itenary_matter{ width:950px; height:690px; margin: 0 auto; }
+
+/* end of South India Tour   */
+
+/* East - India Tour   */
+.ePokhara_package_pannel{ width:1050px; height:1290px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ePokhara_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.ePokhara_itenary_pannel {  width:1000px; height:600px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ePokhara_itenary_matter{ width:950px; height:550px; margin: 0 auto; }
+.eHeritage_package_pannel{ width:1050px; height:1420px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.eHeritage_package_matter { width:1000px; height:1370px; margin:0 auto; }
+.eHeritage_itenary_pannel {  width:1000px; height:730px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.eHeritage_itenary_matter{ width:950px; height:680px; margin: 0 auto; }
+.eMonasteries_package_pannel{ width:1050px; height:1240px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.eMonasteries_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.eMonasteries_itenary_pannel {  width:1000px; height:560px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.eMonasteries_itenary_matter{ width:950px; height:510px; margin: 0 auto; }
+.eTea_package_pannel{ width:1050px; height:1580px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.eTea_package_matter { width:1000px; height:1530px; margin:0 auto; }
+.eTea_itenary_pannel {  width:1000px; height:900px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.eTea_itenary_matter{ width:950px; height:850px; margin: 0 auto; }
+.eTibet_package_pannel{ width:1050px; height:1530px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.eTibet_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.eTibet_itenary_pannel {  width:1000px; height:840px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.eTibet_itenary_matter{ width:950px; height:790px; margin: 0 auto; }
+/* end of East - India Tour   */
+
+/* Honeymoon Tour */
+.hKashmir_package_pannel{ width:1050px; height:1860px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.hKashmir_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.hKashmir_itenary_pannel {  width:1000px; height:1040px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.hKashmir_itenary_matter{ width:950px; height:990px; margin: 0 auto; }
+.hGoa_package_pannel{ width:1050px; height:1310px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.hGoa_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.hGoa_itenary_pannel {  width:1000px; height:500px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.hGoa_itenary_matter{ width:950px; height:450px; margin: 0 auto; }
+.hHimachal_package_pannel{ width:1050px; height:1890px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.hHimachal_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.hHimachal_itenary_pannel {  width:1000px; height:1080px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.hHimachal_itenary_matter{ width:950px; height:1030px; margin: 0 auto; }
+.hKerala_package_pannel{ width:1050px; height:1710px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.hKerala_package_matter { width:1000px; height:1550px; margin:0 auto; }
+.hKerala_itenary_pannel {  width:1000px; height:900px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.hKerala_itenary_matter{ width:950px; height:850px; margin: 0 auto; }
+.hKullu_package_pannel{ width:1050px; height:1620px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.hKullu_package_matter { width:1000px; height:1570px; margin:0 auto; }
+.hKullu_itenary_pannel {  width:1000px; height:800px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.hKullu_itenary_matter{ width:950px; height:750px; margin: 0 auto; }
+.hNilgiris_package_pannel{ width:1050px; height:2040px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.hNilgiris_package_matter { width:1000px; height:1990px; margin:0 auto; }
+.hNilgiris_itenary_pannel {  width:1000px; height:1220px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.hNilgiris_itenary_matter{ width:950px; height:1170px; margin: 0 auto; }
+.hEast_package_pannel{ width:1050px; height:1890px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.hEast_package_matter { width:1000px; height:1840px; margin:0 auto; }
+.hEast_itenary_pannel {  width:1000px; height:1060px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.hEast_itenary_matter{ width:950px; height:1010px; margin: 0 auto; }
+.hUttrakhand_package_pannel{ width:1050px; height:2000px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.hUttrakhand_package_matter { width:1000px; height:1950px; margin:0 auto; }
+.hUttrakhand_itenary_pannel {  width:1000px; height:1180px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.hUttrakhand_itenary_matter{ width:950px; height:1130px; margin: 0 auto; }
+
+/* End of Honeymoon Tour*/
+
+/*Trekking Index */
+.TrekkingTour_package_panel { width:1100px; height:1160px; top:50px;padding-top:50px;margin-bottom: 40px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.TrekkingTour_package_matter { width:1050px; height:1150px; margin:0 auto; }
+.Trekking_header_butt1{ float:left;padding-top:16px;padding-bottom:16px;padding-left:30px;padding-right:30px;margin-left: 20px;  font-family:Century Gothic; font-size:20px; text-align:left; font-weight:bold; color:black; box-shadow:2px 2px 5px #000;border-radius:10px }
+.Trekking_header_butt2{float:left; padding-top:16px;padding-bottom:16px;padding-left:30px;padding-right:30px;margin-left: 20px;  font-family:Century Gothic; font-size:20px; text-align:left; font-weight:bold; color:black; box-shadow:2px 2px 5px #000;border-radius:10px }
+.Trekking_header_butt3{float:left; padding-top:16px;padding-bottom:16px;padding-left:30px;padding-right:30px;margin-left: 20px;  font-family:Century Gothic; font-size:20px; text-align:left; font-weight:bold; color:black; box-shadow:2px 2px 5px #000;border-radius:10px }
+.Trekking_header_butt4{float:left;padding-top:16px;padding-bottom:16px;padding-left:30px;padding-right:30px;margin-left: 20px;  font-family:Century Gothic; font-size:20px; text-align:left; font-weight:bold; color:black; box-shadow:2px 2px 5px #000;border-radius:10px }
+.Trekking_header_butt5{float:left; padding-top:16px;padding-bottom:16px;padding-left:30px;padding-right:30px;margin-left: 20px;  font-family:Century Gothic; font-size:20px; text-align:left; font-weight:bold; color:black; box-shadow:2px 2px 5px #000;border-radius:10px }
+.Trekking_index_data_pannel { width:1000px; height:800px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.Trekking_index_data_matter{ width:955px; height:750px; margin-left: auto; }
+.Trekking_package-box {box-shadow:2px 2px 5px #000;border-radius:10px ; float:left ; width: 270px; margin-right:39px; margin-left: 5px; border: 1px solid #bbb6b6; margin-bottom:10px; min-height:205px; }
+.Trekking_heading-sub { font-family: Century Gothic; font-size: 12px; line-height: 20px; font-weight: normal; color: #333; text-decoration: none; text-align: justify; padding-left: 15px; }
+.Trekking_heading-sub a{text-decoration: none;color: #333;}
+.Trekking_heading-sub a:hover{text-decoration: underline;color: #333;}
+/*End of Trekking Index */
+
+/* Garwal Trekking  */
+.garwal_trek_package_panel { width:1100px; height:1300px; top:50px;padding-top:50px;margin-bottom: 40px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.garwal_trek_package_matter { width:1050px; height:1150px; margin:0 auto; }
+.garwal_trek_data_pannel { width:1000px; height:1050px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.garwal_trek_data_matter{ width:955px; height:750px; margin-left: auto; }
+.garwal_trek_chandrashila_package_pannel { width:1050px; height:1610px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.garwal_trek_chandrashila_package_matter { width:1000px; height:1560px; margin:0 auto; }
+.garwal_trek_chandrashila_itenary_pannel {  width:1000px; height:900px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.garwal_trek_chandrashila_itenary_matter{ width:950px; height:850px; margin: 0 auto; }.garwal_trek_chandrashila_package_pannel { width:1050px; height:1610px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.garwal_trek_dehradun_package_pannel { width:1050px; height:1240px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.garwal_trek_dehradun_package_matter { width:1000px; height:1190px; margin:0 auto; }
+.garwal_trek_dehradun_itenary_pannel {  width:1000px; height:640px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.garwal_trek_dehradun_itenary_matter{ width:950px; height:590px; margin: 0 auto; }
+.garwal_trek_ganked_package_pannel { width:1050px; height:2050px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.garwal_trek_ganked_package_matter { width:1000px; height:1190px; margin:0 auto; }
+.garwal_trek_ganked_itenary_pannel {  width:1000px; height:1400px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.garwal_trek_ganked_itenary_matter{ width:950px; height:1350px; margin: 0 auto; }
+.garwal_trek_harkidun_package_pannel { width:1050px; height:1500px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.garwal_trek_harkidun_package_matter { width:1000px; height:1450px; margin:0 auto; }
+.garwal_trek_harkidun_itenary_pannel {  width:1000px; height:740px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.garwal_trek_harkidun_itenary_matter{ width:950px; height:690px; margin: 0 auto; }
+.garwal_trek_hemkund_package_pannel { width:1050px; height:1330px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.garwal_trek_hemkund_package_matter { width:1000px; height:1280px; margin:0 auto; }
+.garwal_trek_hemkund_itenary_pannel {  width:1000px; height:640px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.garwal_trek_hemkund_itenary_matter{ width:950px; height:590px; margin: 0 auto; }
+.garwal_trek_kauri_package_pannel { width:1050px; height:1520px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.garwal_trek_kauri_package_matter { width:1000px; height:1470px; margin:0 auto; }
+.garwal_trek_kauri_itenary_pannel {  width:1000px; height:730px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.garwal_trek_kauri_itenary_matter{ width:950px; height:680px; margin: 0 auto; }
+.garwal_trek_vasuki_package_pannel { width:1050px; height:1880px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.garwal_trek_vasuki_package_matter { width:1000px; height:1830px; margin:0 auto; }
+.garwal_trek_vasuki_itenary_pannel {  width:1000px; height:1350px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.garwal_trek_vasuki_itenary_matter{ width:950px; height:1300px; margin: 0 auto; }
+.garwal_trek_khatling_package_pannel { width:1050px; height:2210px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.garwal_trek_khatling_package_matter { width:1000px; height:2160px; margin:0 auto; }
+.garwal_trek_khatling_itenary_pannel {  width:1000px; height:1410px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.garwal_trek_khatling_itenary_matter{ width:950px; height:1360px; margin: 0 auto; }
+.garwal_trek_nanda_package_pannel { width:1050px; height:1300px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.garwal_trek_nanda_package_matter { width:1000px; height:1250px; margin:0 auto; }
+.garwal_trek_nanda_itenary_pannel {  width:1000px; height:550px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.garwal_trek_nanda_itenary_matter{ width:950px; height:500px; margin: 0 auto; }
+.garwal_trek_rishikesh_package_pannel { width:1050px; height:1220px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.garwal_trek_rishikesh_package_matter { width:1000px; height:1170px; margin:0 auto; }
+.garwal_trek_rishikesh_itenary_pannel {  width:1000px; height:760px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.garwal_trek_rishikesh_itenary_matter{ width:950px; height:710px; margin: 0 auto; }
+.garwal_trek_yumnotri_package_pannel { width:1050px; height:1620px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.garwal_trek_yumnotri_package_matter { width:1000px; height:1570px; margin:0 auto; }
+.garwal_trek_yumnotri_itenary_pannel {  width:1000px; height:760px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.garwal_trek_yumnotri_itenary_matter{ width:950px; height:710px; margin: 0 auto; }
+.garwal_trek_gangotri_package_pannel { width:1050px; height:1250px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.garwal_trek_gangotri_package_matter { width:1000px; height:1200px; margin:0 auto; }
+.garwal_trek_gangotri_itenary_pannel {  width:1000px; height:550px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.garwal_trek_gangotri_itenary_matter{ width:950px; height:500px; margin: 0 auto; }
+/*end of  Garwal Trekking */
+
+/* Ladakh Trekking   */
+.ladakh_trek_package_panel { width:1100px; height:1200px; top:50px;padding-top:50px;margin-bottom: 40px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ladakh_trek_package_matter { width:1050px; height:1150px; margin:0 auto; }
+.ladakh_trek_data_pannel { width:1000px; height:840px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ladakh_trek_data_matter{ width:955px; height:790px; margin-left: auto; }
+.ladakh_trek_indus_package_pannel { width:1050px; height:1150px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ladakh_trek_indus_package_matter { width:1000px; height:1100px; margin:0 auto; }
+.ladakh_trek_indus_itenary_pannel {  width:1000px; height:430px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ladakh_trek_indus_itenary_matter{ width:950px; height:380px; margin: 0 auto; }
+.ladakh_trek_sham_package_pannel { width:1050px; height:1150px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ladakh_trek_sham_package_matter { width:1000px; height:1100px; margin:0 auto; }
+.ladakh_trek_sham_itenary_pannel {  width:1000px; height:430px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ladakh_trek_sham_itenary_matter{ width:950px; height:380px; margin: 0 auto; }
+.ladakh_trek_journey_package_pannel { width:1050px; height:2230px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ladakh_trek_journey_package_matter { width:1000px; height:2180px; margin:0 auto; }
+.ladakh_trek_journey_itenary_pannel {  width:1000px; height:1670px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ladakh_trek_journey_itenary_matter{ width:950px; height:1620px; margin: 0 auto; }
+.ladakh_trek_manali_package_pannel { width:1050px; height:2070px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ladakh_trek_manali_package_matter { width:1000px; height:2020px; margin:0 auto; }
+.ladakh_trek_manali_itenary_pannel {  width:1000px; height:1430px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ladakh_trek_manali_itenary_matter{ width:950px; height:1380px; margin: 0 auto; }
+.ladakh_trek_markha_package_pannel { width:1050px; height:1300px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ladakh_trek_markha_package_matter { width:1000px; height:1250px; margin:0 auto; }
+.ladakh_trek_markha_itenary_pannel {  width:1000px; height:550px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ladakh_trek_markha_itenary_matter{ width:950px; height:500px; margin: 0 auto; }
+.ladakh_trek_spiti_package_pannel { width:1050px; height:2130px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ladakh_trek_spiti_package_matter { width:1000px; height:1190px; margin:0 auto; }
+.ladakh_trek_spiti_itenary_pannel {  width:1000px; height:1560px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ladakh_trek_spiti_itenary_matter{ width:950px; height:1510px; margin: 0 auto; }
+.ladakh_trek_trans_package_pannel { width:1050px; height:1860px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ladakh_trek_trans_package_matter { width:1000px; height:1810px; margin:0 auto; }
+.ladakh_trek_trans_itenary_pannel {  width:1000px; height:1110px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ladakh_trek_trans_itenary_matter{ width:950px; height:1060px; margin: 0 auto; }
+.ladakh_trek_rupshu_package_pannel { width:1050px; height:2170px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ladakh_trek_rupshu_package_matter { width:1000px; height:2120px; margin:0 auto; }
+.ladakh_trek_rupshu_itenary_pannel {  width:1000px; height:1600px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ladakh_trek_rupshu_itenary_matter{ width:950px; height:1550px; margin: 0 auto; }
+.ladakh_trek_nubra_package_pannel { width:1050px; height:1230px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.ladakh_trek_nubra_package_matter { width:1000px; height:1180px; margin:0 auto; }
+.ladakh_trek_nubra_itenary_pannel {  width:1000px; height:510px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.ladakh_trek_nubra_itenary_matter{ width:950px; height:460px; margin: 0 auto; }
+/*end of  ladakh Trekking  */
+
+/* Kumaon Trekking   */
+.kumaon_trek_package_panel { width:1100px; height:900px; top:50px;padding-top:50px;margin-bottom: 40px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.kumaon_trek_package_matter { width:1050px; height:850px; margin:0 auto; }
+.kumaon_trek_data_pannel { width:1000px; height:590px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.kumaon_trek_data_matter{ width:955px; height:540px; margin-left: auto; }
+.kumaon_trek_adi_package_pannel { width:1050px; height:2060px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.kumaon_trek_adi_package_matter { width:1000px; height:2010px; margin:0 auto; }
+.kumaon_trek_adi_itenary_pannel {  width:1000px; height:1480px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.kumaon_trek_adi_itenary_matter{ width:950px; height:1430px; margin: 0 auto; }
+.kumaon_trek_bhowali_package_pannel { width:1050px; height:810px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.kumaon_trek_bhowali_package_matter { width:1000px; height:760px; margin:0 auto; }
+.kumaon_trek_bhowali_itenary_pannel {  width:1000px; height:360px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.kumaon_trek_bhowali_itenary_matter{ width:950px; height:310px; margin: 0 auto; }
+.kumaon_trek_pindari_package_pannel { width:1050px; height:1310px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.kumaon_trek_pindari_package_matter { width:1000px; height:1260px; margin:0 auto; }
+.kumaon_trek_pindari_itenary_pannel {  width:1000px; height:780px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.kumaon_trek_pindari_itenary_matter{ width:950px; height:730px; margin: 0 auto; }
+.kumaon_trek_kasauni_package_pannel { width:1050px; height:1750px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.kumaon_trek_kasauni_package_matter { width:1000px; height:1190px; margin:0 auto; }
+.kumaon_trek_kasauni_itenary_pannel {  width:1000px; height:940px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.kumaon_trek_kasauni_itenary_matter{ width:950px; height:890px; margin: 0 auto; }
+.kumaon_trek_milam_package_pannel { width:1050px; height:1680px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.kumaon_trek_milam_package_matter { width:1000px; height:1630px; margin:0 auto; }
+.kumaon_trek_milam_itenary_pannel {  width:1000px; height:1180px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.kumaon_trek_milam_itenary_matter{ width:950px; height:1130px; margin: 0 auto; }
+.kumaon_trek_sinla_package_pannel { width:1050px; height:1040px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.kumaon_trek_sinla_package_matter { width:1000px; height:1190px; margin:0 auto; }
+.kumaon_trek_sinla_itenary_pannel {  width:1000px; height:580px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.kumaon_trek_sinla_itenary_matter{ width:950px; height:530px; margin: 0 auto; }
+/*end of  Kumaon Trekking  */
+
+/* Himachal Trekking   */
+.himachal_trek_package_panel { width:1100px; height:920px; top:50px;padding-top:50px;margin-bottom: 40px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.himachal_trek_package_matter { width:1050px; height:870px; margin:0 auto; }
+.himachal_trek_data_pannel { width:1000px; height:620px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.himachal_trek_data_matter{ width:955px; height:570px; margin-left: auto; }
+
+.himachal_trek_dalhousie_package_pannel { width:1050px; height:1290px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.himachal_trek_dalhousie_package_matter { width:1000px; height:1240px; margin:0 auto; }
+.himachal_trek_dalhousie_itenary_pannel {  width:1000px; height:820px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.himachal_trek_dalhousie_itenary_matter{ width:950px; height:770px; margin: 0 auto; }
+.himachal_trek_kinner_package_pannel { width:1050px; height:2560px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.himachal_trek_kinner_package_matter { width:1000px; height:2510px; margin:0 auto; }
+.himachal_trek_kinner_itenary_pannel {  width:1000px; height:1050px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.himachal_trek_kinner_itenary_matter{ width:950px; height:1000px; margin: 0 auto; }
+.himachal_trek_marhu_package_pannel { width:1050px; height:1260px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.himachal_trek_marhu_package_matter { width:1000px; height:1210px; margin:0 auto; }
+.himachal_trek_marhu_itenary_pannel {  width:1000px; height:780px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.himachal_trek_marhu_itenary_matter{ width:950px; height:730px; margin: 0 auto; }
+.himachal_trek_indrahar_package_pannel { width:1050px; height:1170px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.himachal_trek_indrahar_package_matter { width:1000px; height:1120px; margin:0 auto; }
+.himachal_trek_indrahar_itenary_pannel {  width:1000px; height:660px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.himachal_trek_indrahar_itenary_matter{ width:950px; height:610px; margin: 0 auto; }
+.himachal_trek_dharamshala_package_pannel { width:1050px; height:1310px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.himachal_trek_dharamshala_package_matter { width:1000px; height:1260px; margin:0 auto; }
+.himachal_trek_dharamshala_itenary_pannel {  width:1000px; height:840px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.himachal_trek_dharamshala_itenary_matter{ width:950px; height:790px; margin: 0 auto; }
+.himachal_trek_tibba_package_pannel { width:1050px; height:1030px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.himachal_trek_tibba_package_matter { width:1000px; height:980px; margin:0 auto; }
+.himachal_trek_tibba_itenary_pannel {  width:1000px; height:550px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.himachal_trek_tibba_itenary_matter{ width:950px; height:500px; margin: 0 auto; }
+/*end of Himachal Trekking  */
+
+/* Sikkim Trekking   */
+.sikkim_trek_package_panel { width:1100px; height:920px; top:50px;padding-top:50px;margin-bottom: 40px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.sikkim_trek_package_matter { width:1050px; height:870px; margin:0 auto; }
+.sikkim_trek_data_pannel { width:1000px; height:620px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.sikkim_trek_data_matter{ width:955px; height:570px; margin-left: auto; }
+.sikkim_trek_off_package_pannel { width:1050px; height:1450px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.sikkim_trek_off_package_matter { width:1000px; height:1400px; margin:0 auto; }
+.sikkim_trek_off_itenary_pannel {  width:1000px; height:930px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.sikkim_trek_off_itenary_matter{ width:950px; height:890px; margin: 0 auto; }
+.sikkim_trek_singalila_package_pannel { width:1050px; height:1200px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.sikkim_trek_singalila_package_matter { width:1000px; height:1150px; margin:0 auto; }
+.sikkim_trek_singalila_itenary_pannel {  width:1000px; height:640px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.sikkim_trek_singalila_itenary_matter{ width:950px; height:590px; margin: 0 auto; }
+.sikkim_trek_goecha_package_pannel { width:1050px; height:2420px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.sikkim_trek_goecha_package_matter { width:1000px; height:2370px; margin:0 auto; }
+.sikkim_trek_goecha_itenary_pannel {  width:1000px; height:1580px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.sikkim_trek_goecha_itenary_matter{ width:950px; height:1530px; margin: 0 auto; }
+.sikkim_trek_yuksom_package_pannel { width:1050px; height:1800px; padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.sikkim_trek_yuksom_package_matter { width:1000px; height:1750px; margin:0 auto; }
+.sikkim_trek_yuksom_itenary_pannel {  width:1000px; height:980px; padding-top:30px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative;}
+.sikkim_trek_yuksom_itenary_matter{ width:950px; height:930px; margin: 0 auto; }
+/*end of Sikkim Trekking  */
+
+/*Booking page1*/
+.Booking_page1_panel { width:600px; height:1100px; top:50px;padding-top:50px; background:rgba(255,255,255,0.5); margin-top:auto; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius:10px; box-shadow:2px 2px 5px #000; position:relative; }
+.Booking_page1_matter { width:250px; height:350px; margin:0 auto; }	
+
+/*End of Booking Page1*/
+
